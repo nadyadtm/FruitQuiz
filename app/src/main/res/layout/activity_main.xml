@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F2F1"
+    tools:context="com.example.android.fruitquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is the vegetables that contains Vitamin A and good for your eyes?" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/carrot_rbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carrot" />
+
+                <RadioButton
+                    android:id="@+id/apple_rbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apple" />
+
+                <RadioButton
+                    android:id="@+id/kiwi_rbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kiwi" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Indonesian Local Fruits!" />
+
+            <CheckBox
+                android:id="@+id/durian_cbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Durian" />
+
+            <CheckBox
+                android:id="@+id/peach_cbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peach" />
+
+            <CheckBox
+
+                android:id="@+id/mangosteen_cbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mangosteen" />
+
+            <CheckBox
+                android:id="@+id/cherry_cbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cherry" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is the fruit that has the name of fairytale animal?" />
+
+            <EditText
+                android:id="@+id/fruit_input"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Write your answer here" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is the other name of pineaple when this fruit became rare?" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/island"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="King of island" />
+
+                <RadioButton
+                    android:id="@+id/fruits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="King of Fruits" />
+
+                <RadioButton
+                    android:id="@+id/flower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="King of Flower" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is the other name of Kiwi?" />
+
+            <EditText
+                android:id="@+id/fruit2_input"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Write your answer here" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:onClick="SubmitAnswer"/>
+
+    </LinearLayout>
+
+</ScrollView>
